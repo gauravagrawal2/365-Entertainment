@@ -1,0 +1,195 @@
+<html>
+
+  <head>
+    <title>365 Entertainment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favi.jpg" type="image/png" sizes="16x20">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header>
+
+        <div class="navigation">
+
+          <a class="links" href="index.html"><img class="logo" src="image/logo.jpg" alt="365 Entertainment Portal"/></a>
+          <a class="links text" href="#">Movies</a>
+          <a class="links text" href="#tv_series">TV Series</a>
+          <a class="links text" href="#audio">Audio</a>
+
+
+        </div>
+
+        <div class="bar"></div>
+
+      </header>
+
+      <div class="content">
+
+        <div class="head-content">
+
+          <div class="slideshow-container">
+            <div class="slides">
+              <img src="image/img4.webp" alt="hero carousel">
+            </div>
+
+            <div class="slides">
+              <img src="image/img5.webp" alt="hero carousel">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+
+        </div>
+
+
+        <div class="dropdown">
+          <button class="dropbtn"><span id="genreText">Genre</span><i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a onclick="getMediaPosters(this.text)">All</a>no-results
+            <a onclick="getMediaPosters(this.text)">Action</a>
+            <a onclick="getMediaPosters(this.text)">Drama</a>
+            <a onclick="getMediaPosters(this.text)">Sci-Fi</a>
+          </div>
+
+        </div>
+
+
+        <div class="search-container">
+          <form onsubmit="javascript:return false;">
+            <input type="text" class="input-medium search-query" placeholder="Search your favourite movie title" name="search" oninput="updateResults()">
+
+            <div class="search-container-button">
+              <button type="submit" onclick="updateResults()"><i class="fa fa-search"></i></button>
+            </div>
+
+          </form>
+        </div>
+
+        <div id="media-carousel-container">
+
+
+          <div id="media-holder-action">
+
+            <div id="image-container-action">
+              <div class="movies-action">
+                <div class="media-carousel-movies">
+                  <img src="https://occ-0-299-300.1.nflxso.net/art/dce6d/b55c9003b84fe9550e35d29bd7498ae8759dce6d.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Haider</b><br/>Indian crime tragedy film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://internship.suvenconsultants.com/projects/365webproject/365mov/nano2.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Dream 2</b><br/>Thriller, Mystery & Comedy </div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://internship.suvenconsultants.com/projects/365webproject/365mov/nano3.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Batman</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://internship.suvenconsultants.com/projects/365webproject/365mov/nano4.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Monster Manav</b><br/>Japanese manga series written by Tsugumi.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://internship.suvenconsultants.com/projects/365webproject/365mov/nano5.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Kill Bill</b><br/>2003 American martial arts film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://internship.suvenconsultants.com/projects/365webproject/365mov/nano6.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Rowdy</b><br/>Indian action drama film.</div>
+                </div>
+              </div>
+
+              <div class="movies-drama">
+                <div class="media-carousel-movies">
+                  <img src="https://1.bp.blogspot.com/-CU7fnOmIj7w/XpLkOh4oySI/AAAAAAAAn0U/Iv1wBrl0N448eB8iQASoti1rLPMg22ohwCLcBGAsYHQ/s1600/Agneepath%2BFilm%2BVideo%2BSong.JPG"alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Agneepath</b><br/>Indian crime tragedy film.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Aankhen_%282002%29.jpg/220px-Aankhen_%282002%29.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Ankhein</b><br/>Thriller, Mystery & Comedy .</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://m.media-amazon.com/images/M/MV5BNGZiMWQ5YTktZWIwZi00MzZhLTk3OTQtOTc1YzVmNmFmYTdjXkEyXkFqcGdeQXVyODMyODMxNDY@._V1_.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Guide</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Deewar_poster.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Deewar</b><br/>2016 ‧ Fantasy/Science Fiction.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://st1.bollywoodlife.com/wp-content/uploads/2019/11/sholay-screened-at-IFFI-2019-Amitabh-Bachchan-Dharmendra.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Sholay</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://tvwish.com/img/program/518880.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">K3G</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Shaurya_poster.jpg/220px-Shaurya_poster.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Shaurya</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+              </div>
+
+              <div class="movies-scifi">
+                <div class="media-carousel-movies">
+                  <img src="https://resizing.flixster.com/wf1ARFq3jaX1TLl9GeZ1ZhaTLCY=/206x305/v2/https://flxt.tmsimg.com/assets/p10543523_p_v10_aa.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Interstellar</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR71,0,630,1200_AL_.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Star Wars</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="image/thor.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Thor</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_UY1200_CR96,0,630,1200_AL_.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Captain America</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/X-Men_-_Apocalypse.jpg/220px-X-Men_-_Apocalypse.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">X-Men</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/810AwpOyZfL._RI_.jpg" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Captain Marvel</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://i0.wp.com/www.slaphappylarry.com/wp-content/uploads/2016/01/gravity-movie-poster.jpg?resize=1280%2C1200&ssl=1" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Gravity</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+                <div class="media-carousel-movies">
+                  <img src="https://cdn.slidesharecdn.com/ss_thumbnails/obthemartian-160808200512-thumbnail-4.jpg?cb=1470686723" alt="media carousel" width=200 height=200 />
+                  <div class="overlay"><b class="movie-title">Martian</b><br/>A Marvel Comics superhero team.</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="copyright">
+        <a class="links" href="index.html"><img class="logo" src="image/logo.jpg" alt="365 Entertainment Portal"/></a>
+        <div class="text">Powered by 365 Entertainment. All Rights Reserved.</div>
+      </div>
+
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
